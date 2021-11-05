@@ -1,20 +1,11 @@
-function add(a, b) {
-    return a + b;
-}
-var num1 = 5;
-var num2 = 1;
-var result = add(num1, num2);
-console.log(result);
-// learn object
-var person = {
-    name: "Me",
-    age: 23
-};
-var animal = {
-    name: "cat",
-    species: {
-        first: "felix",
-        second: "felus"
+// learn union
+function combine(in1, in2) {
+    var result;
+    if (typeof in1 === "number" && typeof in2 === "number") {
+        result = in1 + in2;
     }
-};
-console.log(person.name);
+    else {
+        result = in1.toString() + in2.toString();
+    }
+    return result;
+}
